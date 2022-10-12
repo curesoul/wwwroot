@@ -1,0 +1,136 @@
+2022-09-21 20:04:27.005410: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:04:27.006410: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:04:36.911447: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:04:36.911447: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:04:36.912446: wfastcgi.py 3.0.0 initialized
+iles in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:04:36.912446: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:04:36.912446: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:04:36.912446: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:04:36.923449: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:04:36.926456: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:06:54.443662: wfastcgi.py exiting because mysite\settings.py has changed, matching .*((\.py)|(\.config))$
+2022-09-21 20:06:54.443662: wfastcgi.py exiting because mysite\settings.py has changed, matching .*((\.py)|(\.config))$
+2022-09-21 20:06:54.444661: Running on_exit tasks
+2022-09-21 20:06:54.444661: Running on_exit tasks
+2022-09-21 20:06:54.444661: Running on_exit tasks
+2022-09-21 20:07:22.944985: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:07:22.944985: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:07:24.161986: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:07:24.162987: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:07:24.169017: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:07:24.176997: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:07:24.186989: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:07:24.187992: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:07:24.187992: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:07:24.188991: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:07:24.193989: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:07:24.193989: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:08:20.543957: wfastcgi.py exiting because static\web.config has changed, matching .*((\.py)|(\.config))$
+2022-09-21 20:08:20.543957: Running on_exit tasks
+2022-09-21 20:08:20.544959: Running on_exit tasks
+2022-09-21 20:08:20.544959: Running on_exit tasks
+2022-09-21 20:09:35.945418: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:09:35.945418: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:11:14.418285: wfastcgi.py exiting because static\web.config has changed, matching .*((\.py)|(\.config))$
+2022-09-21 20:11:14.418285: Running on_exit tasks
+2022-09-21 20:13:22.032567: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:13:22.033567: wfastcgi.py 3.0.0 initialized
+2022-09-21 20:31:47.556684: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 20:31:47.556684: wfastcgi.py 3.0.0 initialized
+2022-09-21 22:21:34.468414: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-21 22:21:34.468414: wfastcgi.py 3.0.0 initialized
+2022-09-22 07:53:46.411874: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-22 07:53:46.412875: wfastcgi.py 3.0.0 initialized
+2022-09-22 08:09:59.233554: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-22 08:09:59.234555: wfastcgi.py 3.0.0 initialized
+2022-09-22 09:10:20.186059: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-22 09:10:20.187058: wfastcgi.py 3.0.0 initialized
+2022-09-22 11:29:12.667779: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-22 11:29:12.668780: wfastcgi.py 3.0.0 initialized
+2022-09-25 20:50:12.646161: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-25 20:50:12.648159: wfastcgi.py 3.0.0 initialized
+2022-09-25 22:27:42.034291: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-25 22:27:42.035260: wfastcgi.py 3.0.0 initialized
+2022-09-25 22:29:08.285662: wfastcgi.py exiting because mixs\views.py has changed, matching .*((\.py)|(\.config))$
+2022-09-25 22:29:08.286664: Running on_exit tasks
+2022-09-26 15:06:44.086842: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-26 15:06:44.087842: wfastcgi.py 3.0.0 initialized
+2022-09-27 17:47:43.869823: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-27 17:47:43.869823: wfastcgi.py 3.0.0 initialized
+2022-09-27 19:36:56.354876: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-27 19:36:56.355876: wfastcgi.py 3.0.0 initialized
+2022-09-27 19:38:37.488182: wfastcgi.py exiting because mysite\settings.py has changed, matching .*((\.py)|(\.config))$
+2022-09-27 19:38:37.489197: Running on_exit tasks
+2022-09-27 19:38:46.239275: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-27 19:38:46.240275: wfastcgi.py 3.0.0 initialized
+2022-09-27 19:54:35.136279: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-27 19:54:35.136279: wfastcgi.py 3.0.0 initialized
+2022-09-28 15:47:00.639664: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-28 15:47:00.640635: wfastcgi.py 3.0.0 initialized
+2022-09-28 16:30:43.580809: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-28 16:30:43.581809: wfastcgi.py 3.0.0 initialized
+2022-09-29 19:53:48.442247: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-09-29 19:53:48.443246: wfastcgi.py 3.0.0 initialized
+2022-10-08 14:50:40.429321: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-08 14:50:40.430321: wfastcgi.py 3.0.0 initialized
+2022-10-09 10:28:18.203337: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 10:28:18.203337: wfastcgi.py 3.0.0 initialized
+2022-10-09 10:48:02.898382: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 10:48:02.899382: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:11:24.067262: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:11:24.068262: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:17:16.969899: wfastcgi.py exiting because mysite\settings.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:17:16.969899: Running on_exit tasks
+2022-10-09 11:19:53.840480: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:19:53.841482: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:24:07.584856: wfastcgi.py exiting because attendance\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:24:07.584856: Running on_exit tasks
+2022-10-09 11:24:08.821666: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:24:08.822666: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:29:17.229033: wfastcgi.py exiting because attendance\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:29:17.229033: Running on_exit tasks
+2022-10-09 11:29:19.547144: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:29:19.548144: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:34:44.105711: wfastcgi.py exiting because mixs\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:34:44.106696: Running on_exit tasks
+2022-10-09 11:35:03.723765: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:35:03.724764: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:35:25.825438: wfastcgi.py exiting because mixs\admin.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:35:25.825438: Running on_exit tasks
+2022-10-09 11:35:26.552729: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:35:26.552729: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:36:37.228937: wfastcgi.py exiting because mixs\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:36:37.229936: Running on_exit tasks
+2022-10-09 11:36:47.446957: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:36:47.447988: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:39:57.562739: wfastcgi.py exiting because attendance\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:39:57.565756: Running on_exit tasks
+2022-10-09 11:40:26.711200: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:40:26.712200: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:46:05.393079: wfastcgi.py exiting because attendance\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:46:05.393079: Running on_exit tasks
+2022-10-09 11:46:15.291101: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:46:15.291101: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:53:41.804366: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:53:41.804366: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:56:37.659664: wfastcgi.py exiting because attendance\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:56:37.660665: Running on_exit tasks
+2022-10-09 11:56:43.413121: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:56:43.413121: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:56:53.601521: wfastcgi.py exiting because attendance\migrations\0008_alter_monthlist_day_month.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:56:53.601521: Running on_exit tasks
+2022-10-09 11:56:58.104922: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:56:58.105920: wfastcgi.py 3.0.0 initialized
+2022-10-09 11:59:13.877463: wfastcgi.py exiting because attendance\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 11:59:13.877463: Running on_exit tasks
+2022-10-09 11:59:45.128253: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 11:59:45.129253: wfastcgi.py 3.0.0 initialized
+2022-10-09 13:22:16.361755: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 13:22:16.362754: wfastcgi.py 3.0.0 initialized
+2022-10-09 13:24:10.933382: wfastcgi.py exiting because attendance\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-09 13:24:10.933382: Running on_exit tasks
+2022-10-09 13:24:33.712504: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-09 13:24:33.713512: wfastcgi.py 3.0.0 initialized
+2022-10-11 18:40:13.994181: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-11 18:40:13.995182: wfastcgi.py 3.0.0 initialized
