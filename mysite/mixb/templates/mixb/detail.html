@@ -63,19 +63,19 @@
         <td scope="col" colspan="5">硫化条件：{{ detail.item.rotor }}</td>
     </tr>
     <tr>
-        <td>检查项目</td>
-        <td>外观</td>
-        <td>MV</td>
-        <td>ST t5</td>
-        <td>Fmin</td>
-        <td>Fmax</td>
-        <td>T10</td>
-        <td>T90</td>
-        <td>SG</td>
-        <td>HS</td>
-        <td>M300</td>
-        <td>TB</td>
-        <td>EB</td>
+        <td class="col-1">检查项目</td>
+        <td class="col-1">外观</td>
+        <td class="col-0.9">MV</td>
+        <td class="col-0.9">ST t5</td>
+        <td class="col-0.9">Fmin</td>
+        <td class="col-0.9">Fmax</td>
+        <td class="col-0.9">T10</td>
+        <td class="col-0.9">T90</td>
+        <td class="col-0.9">SG</td>
+        <td class="col-0.9">HS</td>
+        <td class="col-0.9">M300</td>
+        <td class="col-0.9">TB</td>
+        <td class="col-0.9">EB</td>
     </tr>
     <tr>
         <td>单位</td>
@@ -112,7 +112,7 @@
     {% for test_result in detail.testresult_set.all %}
 
         <tr>
-        <td>{{ test_result.batch }}</td>
+        <td>No.{{ test_result.batch }}</td>
         <td>良</td>
         <td>{{ test_result.mv|default_if_none:"" }}</td>
         <td>{{ test_result.scorch|default_if_none:"" }}</td>
