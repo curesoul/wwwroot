@@ -132,11 +132,9 @@
         {% if test_result.mv < detail.item.mv_min or test_result.mv > detail.item.mv_max %}
         <td class="table-danger">{{ test_result.mv|default_if_none:"" }}</td>
         {% else %}
-
         <td>{{ test_result.mv|default_if_none:"" }}</td>
         {% endif %}
 
-        <td>{{ test_result.mv|default_if_none:"" }}</td>
         <td>{{ test_result.scorch|default_if_none:"" }}</td>
         <td>{{ test_result.fmin|default_if_none:"" }}</td>
         <td>{{ test_result.fmax|default_if_none:"" }}</td>

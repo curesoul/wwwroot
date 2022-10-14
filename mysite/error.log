@@ -184,3 +184,5 @@ iles in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
 2022-10-14 12:19:03.832132: wfastcgi.py 3.0.0 initialized
 2022-10-14 12:28:10.723770: wfastcgi.py exiting because mixb\views.py has changed, matching .*((\.py)|(\.config))$
 2022-10-14 12:28:10.724769: Running on_exit tasks
+2022-10-14 16:04:32.037155: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 16:04:32.038158: wfastcgi.py 3.0.0 initialized
