@@ -1,0 +1,33 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+{% if schedules %}
+<div class="container">
+    <h2 class="pb-2 border-bottom">检查成绩表</h2>
+    <div class="row">
+
+        {% for schedule in schedules %}
+        <div class="col-sm-3 mt-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ schedule.item }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ schedule.lot }}</h6>
+                    <p class="card-text">{{ schedule.created_time }}</p>
+                    <a href="/mixb/{{ schedule.id }}/" class="card-link">查看详情></a>
+                    <!--                <a href="#" class="card-link">Another link</a>-->
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% else %}
+
+<p>no results.</p>
+
+{% endif %}
+
+{% endblock content %}

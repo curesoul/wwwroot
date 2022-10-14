@@ -29,13 +29,14 @@
             <form action="{% url 'mixs:results_sheet' detail.id %}" method="post">
                 {% csrf_token %}
                 {% if error_message %} <p>{{ error_message }}</p>{% endif %}
-<!--                <label for="">选择回数：</label>-->
-<!--                <input type="text" class="text" value="" name="batch-start">-->
-<!--                <input type="text" class="text" value="" name="batch-end">-->
-<!--                <input type="button" value="确定">-->
+                <!--                <label for="">选择回数：</label>-->
+                <!--                <input type="text" class="text" value="" name="batch-start">-->
+                <!--                <input type="text" class="text" value="" name="batch-end">-->
+                <!--                <input type="button" value="确定">-->
 
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="起始回号" aria-label="batch-start" name="batch-start">
+                    <input type="text" class="form-control" placeholder="起始回号" aria-label="batch-start"
+                           name="batch-start">
                     <span class="input-group-text">→</span>
                     <input type="text" class="form-control" placeholder="结束回号" aria-label="batch-end" name="batch-end">
                     <button class="btn btn-outline-secondary" type="submit" id="inputGroupFileAddon04">提交</button>

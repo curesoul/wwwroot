@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mixs.urls')),
+    path('mixb/', include('mixb.urls')),
 ]

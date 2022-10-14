@@ -134,3 +134,53 @@ iles in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
 2022-10-09 13:24:33.713512: wfastcgi.py 3.0.0 initialized
 2022-10-11 18:40:13.994181: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
 2022-10-11 18:40:13.995182: wfastcgi.py 3.0.0 initialized
+2022-10-12 10:14:17.623154: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 10:14:17.624154: wfastcgi.py 3.0.0 initialized
+2022-10-12 10:53:24.442469: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 10:53:24.444469: wfastcgi.py 3.0.0 initialized
+2022-10-12 10:56:36.331753: wfastcgi.py exiting because mixb\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-12 10:56:36.332752: Running on_exit tasks
+2022-10-12 10:58:34.862389: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 10:58:34.862389: wfastcgi.py 3.0.0 initialized
+2022-10-12 11:14:44.296847: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 11:14:44.296847: wfastcgi.py 3.0.0 initialized
+2022-10-12 11:17:00.279047: wfastcgi.py exiting because mixb\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-12 11:17:00.279047: Running on_exit tasks
+2022-10-12 11:17:01.770696: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 11:17:01.771696: wfastcgi.py 3.0.0 initialized
+2022-10-12 11:17:26.349942: wfastcgi.py exiting because mixb\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-12 11:17:26.349942: Running on_exit tasks
+2022-10-12 11:17:27.554880: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 11:17:27.555880: wfastcgi.py 3.0.0 initialized
+2022-10-12 11:18:10.016590: wfastcgi.py exiting because mixb\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-12 11:18:10.016590: Running on_exit tasks
+2022-10-12 11:18:11.255691: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 11:18:11.256691: wfastcgi.py 3.0.0 initialized
+2022-10-12 11:18:19.465904: wfastcgi.py exiting because mixb\models.py has changed, matching .*((\.py)|(\.config))$
+2022-10-12 11:18:19.466903: Running on_exit tasks
+2022-10-12 11:18:20.383699: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 11:18:20.384699: wfastcgi.py 3.0.0 initialized
+2022-10-12 11:21:39.215111: wfastcgi.py exiting because mixb\admin.py has changed, matching .*((\.py)|(\.config))$
+2022-10-12 11:21:39.216110: Running on_exit tasks
+2022-10-12 11:21:41.330695: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 11:21:41.331695: wfastcgi.py 3.0.0 initialized
+2022-10-12 11:57:46.218758: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-12 11:57:46.219759: wfastcgi.py 3.0.0 initialized
+2022-10-14 07:40:14.254113: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 07:40:14.255115: wfastcgi.py 3.0.0 initialized
+2022-10-14 11:29:50.494131: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 11:29:50.495132: wfastcgi.py 3.0.0 initialized
+2022-10-14 11:35:25.922031: wfastcgi.py exiting because mixb\views.py has changed, matching .*((\.py)|(\.config))$
+2022-10-14 11:35:25.923031: Running on_exit tasks
+2022-10-14 11:46:49.067780: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 11:46:49.067780: wfastcgi.py 3.0.0 initialized
+2022-10-14 11:58:37.192391: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 11:58:37.193392: wfastcgi.py 3.0.0 initialized
+2022-10-14 12:17:38.268701: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 12:17:38.269701: wfastcgi.py 3.0.0 initialized
+2022-10-14 12:19:02.658006: wfastcgi.py exiting because mixb\urls.py has changed, matching .*((\.py)|(\.config))$
+2022-10-14 12:19:02.659007: Running on_exit tasks
+2022-10-14 12:19:03.832132: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 12:19:03.832132: wfastcgi.py 3.0.0 initialized
+2022-10-14 12:28:10.723770: wfastcgi.py exiting because mixb\views.py has changed, matching .*((\.py)|(\.config))$
+2022-10-14 12:28:10.724769: Running on_exit tasks
