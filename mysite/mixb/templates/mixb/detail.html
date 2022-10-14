@@ -59,8 +59,13 @@
     <tr>
         <td scope="col" colspan="2">品名：{{ detail.item.name }}</td>
         <td scope="col" colspan="2">Lot：{{ detail.lot }}</td>
-        <td scope="col" colspan="4">MDR：&nbsp;&nbsp;&nbsp;&nbsp;{{ detail.item.mdr_temperature|default_if_none:"-" }}℃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;×&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ detail.item.mdr_duration|default_if_none:"-" }}分钟</td>
-        <td scope="col" colspan="5">硫化条件：{{ detail.item.vulcanization_temperature|default_if_none:"-" }}℃&nbsp;&nbsp;&nbsp;&nbsp;×&nbsp;&nbsp;&nbsp;&nbsp;圆{{ detail.item.vulcanization_disc_duration|default_if_none:"-" }}分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方{{ detail.item.vulcanization_square_duration|default_if_none:"-" }}分</td>
+        <td scope="col" colspan="4">MDR：&nbsp;&nbsp;&nbsp;&nbsp;{{ detail.item.mdr_temperature|default_if_none:"-" }}℃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;×&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {{ detail.item.mdr_duration|default_if_none:"-" }}分钟
+        </td>
+        <td scope="col" colspan="5">硫化条件：{{ detail.item.vulcanization_temperature|default_if_none:"-" }}℃&nbsp;&nbsp;&nbsp;&nbsp;×&nbsp;&nbsp;&nbsp;&nbsp;
+            圆{{ detail.item.vulcanization_disc_duration|default_if_none:"-" }}分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            方{{ detail.item.vulcanization_square_duration|default_if_none:"-" }}分
+        </td>
     </tr>
     <tr>
         <td class="col-1">检查项目</td>
@@ -124,6 +129,13 @@
     <tr>
         <td>No.{{ test_result.batch }}</td>
         <td>良</td>
+        {% if test_result.mv < detail.item.mv_min or test_result.mv > detail.item.mv_max %}
+        <td class="table-danger">{{ test_result.mv|default_if_none:"" }}</td>
+        {% else %}
+
+        <td>{{ test_result.mv|default_if_none:"" }}</td>
+        {% endif %}
+
         <td>{{ test_result.mv|default_if_none:"" }}</td>
         <td>{{ test_result.scorch|default_if_none:"" }}</td>
         <td>{{ test_result.fmin|default_if_none:"" }}</td>
