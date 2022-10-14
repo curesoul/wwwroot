@@ -13,11 +13,38 @@ class Customer(models.Model):
 
 
 class Item(models.Model):
+    ROTORS = [
+        (0, 'ML'),
+        (1, 'Ms'),
+    ]
+    PULL_PERCENT = [
+        (0, '300'),
+        (1, '100'),
+        (2, '50'),
+    ]
+    PULL_UNIT = [
+        (0, 'kgf/cm2'),
+        (1, 'Mpa'),
+    ]
     customer = models.ForeignKey(Customer, on_delete=models.PROTECT, verbose_name='客户')
     name = models.CharField(max_length=255, verbose_name='品名')
-    mv = models.CharField(max_length=255, verbose_name='门尼')
-    mv_min = models.FloatField(verbose_name='MV最小值')
-    mv_max = models.FloatField(verbose_name='MV最大值')
+    rotor = models.IntegerField(choices=ROTORS, default=0, verbose_name='转子')
+    mv_temperature = models.IntegerField(default=125, blank=True, verbose_name='门尼温度')
+    mv_duration = models.CharField(max_length=20, default='1+4', verbose_name='门尼时间')
+    scorch_temperature = models.IntegerField(default=125, null=True, blank=True, verbose_name='焦烧温度')
+    scorch_type = models.CharField(max_length=20, default='T=5', verbose_name='焦烧类型')
+    mdr_temperature = models.IntegerField(null=True, blank=True, verbose_name='MDR温度')
+    mdr_duration = models.FloatField(null=True, blank=True, verbose_name='MDR时间')
+    vulcanization_temperature = models.IntegerField(null=True, blank=True, verbose_name='硫化温度')
+    vulcanization_disc_duration = models.FloatField(null=True, blank=True, verbose_name='圆片时间')
+    vulcanization_square_duration = models.FloatField(null=True, blank=True, verbose_name='方片时间')
+    m_percent_type = models.IntegerField(choices=PULL_PERCENT, default=0, verbose_name='M%数值')
+    m_percent_unit = models.IntegerField(choices=PULL_UNIT, default=0, verbose_name='M%单位')
+    tb_unit = models.IntegerField(choices=PULL_UNIT, default=0, verbose_name='TB单位')
+
+    mv = models.CharField(max_length=255, null=True, blank=True, verbose_name='门尼')
+    mv_min = models.FloatField(null=True, blank=True, verbose_name='MV最小值')
+    mv_max = models.FloatField(null=True, blank=True, verbose_name='MV最大值')
     scorch_min = models.FloatField(null=True, blank=True, verbose_name='焦烧最小值')
     scorch_max = models.FloatField(null=True, blank=True, verbose_name='焦烧最大值')
     fmin_min = models.FloatField(null=True, blank=True, verbose_name='Fmin最小值')
@@ -36,10 +63,8 @@ class Item(models.Model):
     m_percent_max = models.FloatField(null=True, blank=True, verbose_name='M%最大值')
     tb_min = models.FloatField(null=True, blank=True, verbose_name='TB最小值')
     tb_max = models.FloatField(null=True, blank=True, verbose_name='TB最大值')
-    eb_min = models.FloatField(null=True, blank=True, verbose_name='EB最小值')
-    eb_max = models.FloatField(null=True, blank=True, verbose_name='EB最大值')
-
-    temperature = models.IntegerField(default=100, blank=True, verbose_name='温度')
+    eb_min = models.IntegerField(null=True, blank=True, verbose_name='EB最小值')
+    eb_max = models.IntegerField(null=True, blank=True, verbose_name='EB最大值')
 
     def __str__(self):
         return self.name

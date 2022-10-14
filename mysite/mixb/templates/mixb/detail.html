@@ -59,8 +59,8 @@
     <tr>
         <td scope="col" colspan="2">品名：{{ detail.item.name }}</td>
         <td scope="col" colspan="2">Lot：{{ detail.lot }}</td>
-        <td scope="col" colspan="4">MDR：{{ detail.item.temperature }}℃</td>
-        <td scope="col" colspan="5">硫化条件：{{ detail.item.rotor }}</td>
+        <td scope="col" colspan="4">MDR：&nbsp;&nbsp;&nbsp;&nbsp;{{ detail.item.mdr_temperature|default_if_none:"-" }}℃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;×&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ detail.item.mdr_duration|default_if_none:"-" }}分钟</td>
+        <td scope="col" colspan="5">硫化条件：{{ detail.item.vulcanization_temperature|default_if_none:"-" }}℃&nbsp;&nbsp;&nbsp;&nbsp;×&nbsp;&nbsp;&nbsp;&nbsp;圆{{ detail.item.vulcanization_disc_duration|default_if_none:"-" }}分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方{{ detail.item.vulcanization_square_duration|default_if_none:"-" }}分</td>
     </tr>
     <tr>
         <td class="col-1">检查项目</td>
@@ -95,23 +95,33 @@
     <tr>
         <td>规格</td>
         <td>*1</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>{{ detail.item.mv_min|default_if_none:"" }}-{{ detail.item.mv_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.scorch_min|default_if_none:"" }}-{{ detail.item.scorch_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.fmin_min|default_if_none:"" }}-{{ detail.item.fmin_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.fmax_min|default_if_none:"" }}-{{ detail.item.fmax_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.t10_min|default_if_none:"" }}-{{ detail.item.t10_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.t90_min|default_if_none:"" }}-{{ detail.item.t90_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.sg_min|default_if_none:"" }}-{{ detail.item.sg_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.hs_min|default_if_none:"" }}-{{ detail.item.hs_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.m_percent_min|default_if_none:"" }}-{{ detail.item.m_percent_max|default_if_none:"" }}</td>
+        <td>{{ detail.item.tb_min|default_if_none:"" }}
+            {% if detail.item.tb_max == 1000 %}
+            {% else %}
+            -{{ detail.item.tb_max|default_if_none:"" }}
+            {% endif %}
+        </td>
+        <td>{{ detail.item.eb_min|default_if_none:"" }}
+            {% if detail.item.eb_max == 1000 %}
+            {% else %}
+            -{{ detail.item.eb_max|default_if_none:"" }}
+            {% endif %}
+        </td>
     </tr>
 
     <!--    检查数据-->
     {% for test_result in detail.testresult_set.all %}
 
-        <tr>
+    <tr>
         <td>No.{{ test_result.batch }}</td>
         <td>良</td>
         <td>{{ test_result.mv|default_if_none:"" }}</td>
