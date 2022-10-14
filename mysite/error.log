@@ -186,3 +186,13 @@ iles in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
 2022-10-14 12:28:10.724769: Running on_exit tasks
 2022-10-14 16:04:32.037155: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
 2022-10-14 16:04:32.038158: wfastcgi.py 3.0.0 initialized
+2022-10-14 16:15:01.696716: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\mysite\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "C:\inetpub\wwwroot\mysite\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2022-10-14 16:15:01.697718: Running on_exit tasks
+2022-10-14 16:15:01.697718: wfastcgi.py 3.0.0 closed
+2022-10-14 16:31:16.197479: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-14 16:31:16.198479: wfastcgi.py 3.0.0 initialized
