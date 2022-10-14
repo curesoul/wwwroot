@@ -1,7 +1,11 @@
 {% extends 'header.html' %}
 
 {% block content %}
-
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
 
 <h1 class="display-4 fw-bold text-center">检查成绩表</h1>
 
@@ -55,7 +59,7 @@
 </div>
 
 
-<table class="table table-bordered">
+<table class="table table-bordered text-center">
     <tr>
         <td scope="col" colspan="2">品名：{{ detail.item.name }}</td>
         <td scope="col" colspan="2">Lot：{{ detail.lot }}</td>
