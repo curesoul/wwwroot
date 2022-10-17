@@ -53,6 +53,7 @@ class Author(models.Model):
 
 class Book(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    batch_no = models.IntegerField(null=True, verbose_name='回号')
     title = models.CharField(max_length=100)
     test = models.CharField(max_length=100)
 
