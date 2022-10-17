@@ -198,3 +198,19 @@ OSError: [Errno 22] Invalid argument
 2022-10-14 16:31:16.198479: wfastcgi.py 3.0.0 initialized
 2022-10-14 16:43:46.222445: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
 2022-10-14 16:43:46.223423: wfastcgi.py 3.0.0 initialized
+2022-10-17 08:15:02.055526: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-17 08:15:02.056525: wfastcgi.py 3.0.0 initialized
+2022-10-17 08:50:01.779406: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-17 08:50:01.779406: wfastcgi.py 3.0.0 initialized
+2022-10-17 08:56:49.681655: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-17 08:56:49.681655: wfastcgi.py 3.0.0 initialized
+2022-10-17 09:02:43.003251: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-17 09:02:43.004254: wfastcgi.py 3.0.0 initialized
+2022-10-17 09:03:35.387280: wfastcgi.py exiting because mixb\views.py has changed, matching .*((\.py)|(\.config))$
+2022-10-17 09:03:35.388295: Running on_exit tasks
+2022-10-17 14:47:18.027148: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-17 14:47:18.027148: wfastcgi.py 3.0.0 initialized
+2022-10-17 14:48:16.014959: wfastcgi.py exiting because mysite\urls.py has changed, matching .*((\.py)|(\.config))$
+2022-10-17 14:48:16.016956: Running on_exit tasks
+2022-10-17 14:53:01.034346: wfastcgi.py will restart when files in C:\inetpub\wwwroot\mysite\ are changed: .*((\.py)|(\.config))$
+2022-10-17 14:53:01.034346: wfastcgi.py 3.0.0 initialized

@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mixs.urls')),
     path('mixb/', include('mixb.urls')),
+    path('attendance/', include('attendance.urls')),
 ]

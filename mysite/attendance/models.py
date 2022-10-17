@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.forms import formset_factory, inlineformset_factory
+
 
 class MonthList(models.Model):
     TYPES = [
@@ -45,4 +47,15 @@ class AttendanceLog(models.Model):
         verbose_name = verbose_name_plural = '出勤记录'
 
 
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+
+
+class Book(models.Model):
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    title = models.CharField(max_length=100)
+    test = models.CharField(max_length=100)
+
+
+BookFormSet = inlineformset_factory(Author, Book, fields=('title',))
 
