@@ -7,3 +7,9 @@ class CustomerForm(ModelForm):
     class Meta:
         model = Customer
         fields = '__all__'
+
+
+class TestForm(ModelForm):
+    class Meta:
+        model = TestResult
+        fields = '__all__'

@@ -112,3 +112,4 @@ class TestResult(models.Model):
 
     class Meta:
         verbose_name = verbose_name_plural = '检查明细'
+        ordering = ('-batch',)

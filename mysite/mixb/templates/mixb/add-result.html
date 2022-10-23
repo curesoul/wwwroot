@@ -1,0 +1,18 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+<form action="{% url 'mixb:add_result' schedule.id %}" method="post">
+    {% csrf_token %}
+    {{ schedule.lot }}-{{ schedule.item }}
+    {% if error_message %} <p><strong>{{ error_message }}</strong></p>{% endif %}
+    {% for result in schedule.testresult_set.all %}
+<!--    No.{{ forloop.counter }}-{{ result.batch }} - {{ result.mv }} - {{ result.scorch }} - {{ result.fmin }} - {{ result.fmax }} - {{ result.t10 }}-->
+<!--    <br>-->
+    {{ result.batch }} -<input type="text" name="mv" id="" >
+    <br>
+    {% endfor %}
+    <input type="submit" value="提交">
+</form>
+
+{% endblock content %}
