@@ -82,13 +82,14 @@ class Schedule(models.Model):
     mix_b_lot = models.CharField(max_length=6, blank=True, verbose_name='B炼批号')
     notes = models.CharField(max_length=255, blank=True, verbose_name='备注')
     created_time = models.DateTimeField(auto_created=True, verbose_name='添加时间')
-    etd = models.DateField(blank=True, verbose_name='发货日')
+    etd = models.DateField(blank=True, null=True, verbose_name='发货日')
 
     def __str__(self):
         return str(self.lot) + " - " + self.item.name
 
     class Meta:
         verbose_name = verbose_name_plural = '计划'
+        ordering = ('-id',)
 
 
 class TestResult(models.Model):
@@ -112,4 +113,5 @@ class TestResult(models.Model):
 
     class Meta:
         verbose_name = verbose_name_plural = '检查明细'
-        ordering = ('-batch',)
+        ordering = ('batch',)
+        # ordering = ('-batch',)

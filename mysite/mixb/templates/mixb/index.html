@@ -15,6 +15,8 @@
                     <h6 class="card-subtitle mb-2 text-muted">{{ schedule.lot }}</h6>
                     <p class="card-text">{{ schedule.created_time }}</p>
                     <a href="/mixb/{{ schedule.id }}/" class="card-link">查看详情></a>
+                    <a href="{% url 'mixb:test' schedule.id batch_no %}" class="card-link">编辑></a>
+                    <a href="{% url 'mixb:test_sg' schedule.id batch_no %}" class="card-link">编辑SG></a>
                     <!--                <a href="#" class="card-link">Another link</a>-->
                 </div>
             </div>

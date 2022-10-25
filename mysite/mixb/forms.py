@@ -13,3 +13,10 @@ class TestForm(ModelForm):
     class Meta:
         model = TestResult
         fields = '__all__'
+        # fields = ['plan', 'batch', 'mv', 'scorch', 'fmin', 'fmax', 't10', 't90']
+
+
+class SgForm(ModelForm):
+    class Meta:
+        model = TestResult
+        fields = ['plan', 'batch', 'sg']

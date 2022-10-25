@@ -4,13 +4,15 @@ from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect
 
 from .models import Customer, Item, Schedule, TestResult
-from .forms import CustomerForm, TestForm
+from .forms import CustomerForm, TestForm, SgForm
 
 
 def index(request):
     schedules = Schedule.objects.all()
+    batch_no = 1
     context = {
-        'schedules': schedules
+        'schedules': schedules,
+        'batch_no' : batch_no,
     }
     return render(request, 'mixb/index.html', context)
 
@@ -45,15 +47,81 @@ def add_result(request, schedule_id):
         return HttpResponseRedirect(reverse('schedule:add_result', args=(schedule.id,)))
 
 
+# def test(request, schedule_id, batch_no):
+#     schedule = get_object_or_404(Schedule, pk=schedule_id)
+#     form = TestForm(initial={'plan': schedule.id, 'batch': batch_no})
+#     if request.method == 'POST':
+#         form = TestForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             batch_no = int(request.POST['batch'])
+#             return HttpResponseRedirect(reverse('mixb:test', args=(schedule_id, batch_no+1)))
+#     context = {
+#         'form': form,
+#         'detail': schedule,
+#     }
+#     return render(request, 'mixb/test.html', context)
+
 def test(request, schedule_id, batch_no):
     schedule = get_object_or_404(Schedule, pk=schedule_id)
-    form = TestForm(initial={'plan': schedule.id, 'batch': batch_no})
-    if request.method == 'POST':
-        form = TestForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect(reverse('mixb:test', args=(schedule_id, batch_no+1)))
+    try:
+        batch_result = TestResult.objects.get(plan=schedule_id, batch=batch_no)
+        form = TestForm(initial={'plan': schedule.id, 'batch': batch_no}, instance=batch_result)
+        types = 'edit'
+    except:
+        form = TestForm(request.POST or None, initial={'plan': schedule.id, 'batch': batch_no})
+        types = 'create'
+
+    if types == 'create':
+        if request.method == 'POST':
+            form = TestForm(request.POST)
+            if form.is_valid():
+                form.save()
+                batch_no = int(request.POST['batch'])
+                return HttpResponseRedirect(reverse('mixb:test', args=(schedule_id, batch_no+1)))
+    if types == 'edit':
+        if request.method == 'POST':
+            form = TestForm(request.POST, instance=batch_result)
+            if form.is_valid():
+                form.save()
+                batch_no = int(request.POST['batch'])
+                return HttpResponseRedirect(reverse('mixb:test', args=(schedule_id, batch_no+1)))
+
     context = {
         'form': form,
+        'detail': schedule,
     }
     return render(request, 'mixb/test.html', context)
+
+
+def test_sg(request, schedule_id, batch_no):
+    schedule = get_object_or_404(Schedule, pk=schedule_id)
+    try:
+        batch_result = TestResult.objects.get(plan=schedule_id, batch=batch_no)
+        form = SgForm(initial={'plan': schedule.id, 'batch': batch_no}, instance=batch_result)
+        types = 'edit'
+    except:
+        form = SgForm(request.POST or None, initial={'plan': schedule.id, 'batch': batch_no})
+        types = 'create'
+
+    if types == 'create':
+        if request.method == 'POST':
+            form = SgForm(request.POST)
+            if form.is_valid():
+                form.save()
+                batch_no = int(request.POST['batch'])
+                return HttpResponseRedirect(reverse('mixb:test_sg', args=(schedule_id, batch_no+1)))
+    if types == 'edit':
+        if request.method == 'POST':
+            form = SgForm(request.POST, instance=batch_result)
+            if form.is_valid():
+                form.save()
+                batch_no = int(request.POST['batch'])
+                return HttpResponseRedirect(reverse('mixb:test_sg', args=(schedule_id, batch_no+1)))
+
+    context = {
+        'form': form,
+        'detail': schedule,
+    }
+    return render(request, 'mixb/test_sg.html', context)
+
